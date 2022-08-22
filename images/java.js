@@ -21,8 +21,27 @@
          
   }
   
-      
-  document.getElementById('btn-dusan').addEventListener('click',function() {     
+    document.getElementById('btn-dusan').addEventListener('click',function() {     
   const player1 = getInputValueById('player-dusan'); 
   const x =document.getElementById('btn-dusan');
   x.disabled = true ;})
+  document.getElementById('btn-jamie').addEventListener('click',function() {     
+   const player1 = getInputValueById('player-jamie'); 
+   const x =document.getElementById('btn-jamie');
+   x.disabled = true ;})
+   document.getElementById('btn-karim').addEventListener('click',function() {     
+      const player1 = getInputValueById('player-karim'); 
+      const x =document.getElementById('btn-karim');
+      x.disabled = true ;})
+      document.getElementById('btn-kyllian').addEventListener('click',function() {     
+         const player1 = getInputValueById('player-kyllian'); 
+         const x =document.getElementById('btn-kyllian');
+         x.disabled = true ;})
+         document.getElementById('btn-luis').addEventListener('click',function() {     
+            const player1 = getInputValueById('player-luis'); 
+            const x =document.getElementById('btn-luis');
+            x.disabled = true ;})
+            document.getElementById('btn-depay').addEventListener('click',function() {     
+               const player1 = getInputValueById('player-depay'); 
+               const x =document.getElementById('btn-depay');
+               x.disabled = true ;})
