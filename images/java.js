@@ -49,11 +49,11 @@ else{document.getElementById('btn-luis').disabled=true;
 else{(document.getElementById('btn-depay').disabled=true) }
 
 })
-function getInputValueById(InputId){
-  const inputs = document.getElementById(InputId);
-      const inputsValueString = player.value ;
-      const inputsValue = parseFloat(inputsValueString);
-      return inputsValue ;}   
+// function getInputValueById(InputId){
+//   const inputs = document.getElementById(InputId);
+//       const inputsValueString = player.value ;
+//       const inputsValue = parseFloat(inputsValueString);
+//       return inputsValue ;}   
        function playerTotal() {
         const parentNode = document.querySelectorAll('li');
     
@@ -75,4 +75,19 @@ function getInputValueById(InputId){
       const expense = document.getElementById('expenses');
       setElementValueById('expenses' , playerCost)
    })
+   document.getElementById('btn-total').addEventListener('click',function() {
+    const managerCost = document.getElementById('manager-input')
+         const managerCostString = managerCost.value ;
+      const managerCostNumber = parseFloat(managerCostString);
+      
+      const coachCost = document.getElementById('coach-input')
+      const coachCostString = coachCost.value ;
+   const coachCostNumber = parseFloat(coachCostString);
+   
+    const expense = document.getElementById('expenses');
+    const expenseValueString = expense.innerText;
+    const expenseValue = parseFloat(expenseValueString);
+    const totalCost = managerCostNumber + coachCostNumber + expenseValue;
+    document.getElementById('total-expenses');
+      setElementValueById('total-expenses' , totalCost)})
        
