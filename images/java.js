@@ -49,11 +49,7 @@ else{document.getElementById('btn-luis').disabled=true;
 else{(document.getElementById('btn-depay').disabled=true) }
 
 })
-// function getInputValueById(InputId){
-//   const inputs = document.getElementById(InputId);
-//       const inputsValueString = player.value ;
-//       const inputsValue = parseFloat(inputsValueString);
-//       return inputsValue ;}   
+
        function playerTotal() {
         const parentNode = document.querySelectorAll('li');
     
