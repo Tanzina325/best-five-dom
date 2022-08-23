@@ -1,72 +1,78 @@
-// document.getElementById('btn-dusan').addEventListener('click',function() {
-//     const playerDusan = document.getElementById('player-dusan');
-//     const playerDusanValue = playerDusan.innerText ;
-//     const parentNode = document.getElementById('select-five');
-//     const li =document.createElement('li');
-//     li.innerText = 'tania' ;
-//     parentNode.appendChild(li);
 
-//  })
-//  const parentNode = document.getElementById('select-five');
-//     const li =document.createElement('li');
-//     li.innerText = 'tania' ;
-//     parentNode.appendChild(li);
-    function getInputValueById(InputId){
-      const player = document.getElementById(InputId);
+    function getElementValueById(ElementId){
+      const player = document.getElementById(ElementId);
           const playerValue = player.innerText ;
           const parentNode = document.getElementById('select-five');
           const li =document.createElement('li');
           li.innerText = playerValue ;
           return   parentNode.appendChild(li);}
-         //  function getElementById(){const parentNode = document.getElementById('select-five');
-         //  if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-dusan').disabled =false );
-         //  return}};
-         //  function getElementValueById(){const parentNode = document.getElementById('select-five');
-         //  parentNode.removeChild(parentNode.lastElementChild);return};
+          
           
     document.getElementById('btn-dusan').addEventListener('click',function() {     
-  const player1 = getInputValueById('player-dusan');
+  const player1 = getElementValueById('player-dusan');
   const parentNode = document.getElementById('select-five');
   if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-dusan').disabled =false )}
 else{document.getElementById('btn-dusan').disabled=true;
-}
-
-})
+}})
   document.getElementById('btn-jamie').addEventListener('click',function() {     
-   const player1 = getInputValueById('player-jamie');
+   const player2 = getElementValueById('player-jamie');
    const parentNode = document.getElementById('select-five');
   if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-jamie').disabled =false )}
 else{document.getElementById('btn-jamie').disabled=true;
 }
 })
    document.getElementById('btn-karim').addEventListener('click',function() {     
-      const player1 = getInputValueById('player-karim'); 
+      const player3 = getElementValueById('player-karim'); 
       const parentNode = document.getElementById('select-five');
   if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-karim').disabled =false )}
 else{document.getElementById('btn-karim').disabled=true;
 }
 })
       document.getElementById('btn-kyllian').addEventListener('click',function() {     
-         const player1 = getInputValueById('player-kyllian'); 
+         const player4 = getElementValueById('player-kyllian'); 
          const parentNode = document.getElementById('select-five');
   if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-kyllian').disabled =false )}
 else{document.getElementById('btn-kyllian').disabled=true;
-}
-
-         })
+}})
          document.getElementById('btn-luis').addEventListener('click',function() {     
-            const player1 = getInputValueById('player-luis'); 
+            const player5 = getElementValueById('player-luis'); 
             const parentNode = document.getElementById('select-five');
   if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-luis').disabled =false )}
 else{document.getElementById('btn-luis').disabled=true;
 }
 })
             document.getElementById('btn-depay').addEventListener('click',function() {     
-               const player1 = getInputValueById('player-depay'); 
+               const player6 = getElementValueById('player-depay'); 
                const parentNode = document.getElementById('select-five');
   if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild))
     && (document.getElementById('btn-depay').disabled =false )}
-else{(document.getElementById('btn-depay').disabled=true) 
-}
+else{(document.getElementById('btn-depay').disabled=true) }
+
 })
-               // const remove = getElementValueById;
+function getInputValueById(InputId){
+  const inputs = document.getElementById(InputId);
+      const inputsValueString = player.value ;
+      const inputsValue = parseFloat(inputsValueString);
+      return inputsValue ;}   
+       function playerTotal() {
+        const parentNode = document.querySelectorAll('li');
+    
+        const parentNodeLengthString = parentNode.length;
+        const parentNodeLength = parseFloat(parentNodeLengthString);
+        return parentNodeLength ;}
+       function setElementValueById(elementId , newValue){
+        const element = document.getElementById(elementId) ;
+    
+        element.innerText = newValue ;}
+        
+       document.getElementById('btn-calculate').addEventListener('click',function() {
+        const parentNodeLengths = playerTotal()
+         const perPlayerCost = document.getElementById('player-input')
+         const playerCostString = perPlayerCost.value ;
+      const playerCostNumber = parseFloat(playerCostString);
+      
+         const playerCost = playerCostNumber * parentNodeLengths
+      const expense = document.getElementById('expenses');
+      setElementValueById('expenses' , playerCost)
+   })
+       
