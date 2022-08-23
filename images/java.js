@@ -11,56 +11,57 @@
     document.getElementById('btn-dusan').addEventListener('click',function() {     
       const parentNodes = document.querySelectorAll('li');
     const parentNodesLength = parentNodes.length;;
-        if(parentNodesLength<5){const player = getElementValueById('player-dusan')}
-        else
-        {alert('cannot take more than five player')}
-     
-document.getElementById('btn-dusan').disabled=true;
-})
-  document.getElementById('btn-jamie').addEventListener('click',function() {     
-   const parentNodes = document.querySelectorAll('li');
-    const parentNodesLength = parentNodes.length;;
-        if(parentNodesLength<5){const player = getElementValueById('player-jamie')}
+        if(parentNodesLength<5){const player = getElementValueById('player-dusan') ;
+        document.getElementById('btn-dusan').disabled=true;}
         else
         {alert('cannot take more than five player')}
 
-document.getElementById('btn-jamie').disabled=true;
+ })
+ 
+  document.getElementById('btn-jamie').addEventListener('click',function() {     
+   const parentNodes = document.querySelectorAll('li');
+    const parentNodesLength = parentNodes.length;;
+        if(parentNodesLength<5){const player = getElementValueById('player-jamie');document.getElementById('btn-jamie').disabled=true;}
+        else
+        {alert('cannot take more than five player')}
+      
 })
+
    document.getElementById('btn-karim').addEventListener('click',function() { 
       const parentNodes = document.querySelectorAll('li');
     const parentNodesLength = parentNodes.length;;
-        if(parentNodesLength<5){const player = getElementValueById('player-karim')}
+        if(parentNodesLength<5){const player = getElementValueById('player-karim');
+        document.getElementById('btn-karim').disabled=true;}
         else
         {alert('cannot take more than five player')}    
-      
-document.getElementById('btn-karim').disabled=true;
+        
 })
       document.getElementById('btn-kyllian').addEventListener('click',function() { 
          const parentNodes = document.querySelectorAll('li');
     const parentNodesLength= parentNodes.length;;
-        if(parentNodesLength<5){const player = getElementValueById('player-kyllian')}
+        if(parentNodesLength<5){const player = getElementValueById('player-kyllian');
+        document.getElementById('btn-kyllian').disabled=true;}
         else
         {alert('cannot take more than five player')}    
         
-document.getElementById('btn-kyllian').disabled=true;
 })
          document.getElementById('btn-luis').addEventListener('click',function() { 
             const parentNodes = document.querySelectorAll('li');
     const parentNodesLength = parentNodes.length;;
-        if(parentNodesLength<5){const player = getElementValueById('player-luis')}
+        if(parentNodesLength<5){const player = getElementValueById('player-luis');
+        document.getElementById('btn-luis').disabled=true;}
         else
         {alert('cannot take more than five player')}    
-            
-document.getElementById('btn-luis').disabled=true;
+       
 })
             document.getElementById('btn-depay').addEventListener('click',function() { 
                const parentNodes = document.querySelectorAll('li');
     const parentNodesLength = parentNodes.length;;
-        if(parentNodesLength<5){const player = getElementValueById('player-depay')}
+        if(parentNodesLength<5){const player = getElementValueById('player-depay');
+        document.getElementById('btn-depay').disabled=true;}
         else
         {alert('cannot take more than five player')}    
-               
-               document.getElementById('btn-depay').disabled=true;
+        
 })
 
        function playerTotal() {
