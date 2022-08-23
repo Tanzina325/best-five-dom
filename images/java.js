@@ -42,12 +42,11 @@ else{document.getElementById('btn-luis').disabled=true;
 }
 })
             document.getElementById('btn-depay').addEventListener('click',function() {     
-               const player6 = getElementValueById('player-depay'); 
+               const player6 = getElementValueById('player-depay');
                const parentNode = document.getElementById('select-five');
-  if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild))
-    && (document.getElementById('btn-depay').disabled =false )}
-else{(document.getElementById('btn-depay').disabled=true) }
-
+               if(parentNode.childNodes.length>5){(parentNode.removeChild(parentNode.lastElementChild)) && (document.getElementById('btn-depay').disabled =false )}
+               else{document.getElementById('btn-depay').disabled=true;
+               }
 })
 
        function playerTotal() {
